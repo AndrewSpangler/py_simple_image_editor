@@ -1,0 +1,6 @@
+{
+	"0.0.3": "Forgot to save changes before building 0.0.2",
+	"0.0.2": "Fix default theme to be 'clam' instead of 'Clam' which was causing a crash on launch.",
+	"0.0.1": "Move __main__ module to correct location",
+	"0.0.0": "Create Project"
+}

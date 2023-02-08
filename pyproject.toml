@@ -1,0 +1,55 @@
+[build-system]
+requires = [
+    "setuptools",
+    "py_simple_readme",
+    "py_simple_ttk",
+    "pillow",
+    "numpy",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_simple_image_editor"
+readme = "README.md"
+dynamic = [
+    "version",
+]
+description = "A basic pixel art / pixel gif editor."
+authors = [
+    { name = "Andrew Spangler", email = "AndrewSpangler@users.noreply.github.com" },
+]
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "py_simple_ttk",
+    "pillow",
+    "numpy",
+]
+keywords = ["image", "editor", "gif", "animated", "animation"]
+
+[project.license]
+text = "LICENSE"
+
+[project.urls]
+homepage = "https://GitHub.com/AndrewSpangler/py_simple_image_editor/"
+"bug tracker" = "https://GitHub.com/AndrewSpangler/py_simple_image_editor/issues"
+documentation = "https://GitHub.com/AndrewSpangler/py_simple_image_editor/"
+repository = "https://GitHub.com/AndrewSpangler/py_simple_image_editor/"
+
+[tool.setuptools.dynamic.version]
+attr = "py_simple_image_editor.version"
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+include = [
+    "*",
+]
